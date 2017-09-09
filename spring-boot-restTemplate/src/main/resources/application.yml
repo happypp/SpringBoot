@@ -1,0 +1,5 @@
+server:
+  port: 8081
+
+weather:
+  weatherServicePath: http://localhost:8080/weather/city/
