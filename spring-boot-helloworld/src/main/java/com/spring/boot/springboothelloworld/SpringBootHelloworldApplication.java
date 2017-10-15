@@ -1,12 +1,12 @@
-package com.example.resttemplate;
+package com.spring.boot.springboothelloworld;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootRestTemplateApplication {
+public class SpringBootHelloworldApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootRestTemplateApplication.class, args);
+		SpringApplication.run(SpringBootHelloworldApplication.class, args);
 	}
 }
