@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.druid.mapper.master.MasterStudentMapper">
+
+    <insert id="insert" parameterType="com.springboot.druid.entities.Student">
+        <selectKey resultType="java.lang.Integer" keyProperty="id" keyColumn="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into student(name,age) values(#{name},#{age})
+    </insert>
+
+    <select id="getById" resultType="com.springboot.druid.entities.Student">
+        select * from student where id = #{id}
+    </select>
+    <select id="getBypage" resultType="com.springboot.druid.entities.Student">
+        SELECT * FROM student
+    </select>
+</mapper>

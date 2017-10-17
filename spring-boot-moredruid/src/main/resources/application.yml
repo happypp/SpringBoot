@@ -1,0 +1,15 @@
+#master数据源
+spring:
+  datasource:
+    master:
+      url: jdbc:mysql://localhost:3306/SpringBootMaster
+      username: root
+      password:
+      driver-class-name: com.mysql.jdbc.Driver
+      masterMapperLocations: classpath:mapper/master/*.xml
+    cluster:
+      url: jdbc:mysql://localhost:3306/SpringBootCluster
+      username: root
+      password:
+      driver-class-name: com.mysql.jdbc.Driver
+      clusterMapperLocations: classpath:mapper/cluster/*.xml
