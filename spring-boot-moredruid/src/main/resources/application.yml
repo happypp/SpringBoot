@@ -13,3 +13,9 @@ spring:
       password:
       driver-class-name: com.mysql.jdbc.Driver
       clusterMapperLocations: classpath:mapper/cluster/*.xml
+logging:
+  level:
+    com:
+      springboot:
+        druid:
+          mapper: debug
